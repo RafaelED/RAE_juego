@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia de Reciclaje y Medio Ambiente</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="header.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.jpg" alt="Logo del Juego"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reglas.html">Instrucciones</a></li>
+            <li><a href="puntuaciones.html">Puntuaciones</a></li>
+            <li><a href="ayuda.html">Ayuda</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="container">
+        <div class="game-container">
+            <h1>¿Quién quiere ser millonario? - Reciclaje y Medio Ambiente</h1>
+            <div id="question-container" class="hide">
+                <div id="question">Pregunta</div>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn">Respuesta 1</button>
+                    <button class="btn">Respuesta 2</button>
+                    <button class="btn">Respuesta 3</button>
+                    <button class="btn">Respuesta 4</button>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="start-btn" class="start-btn btn">Comenzar</button>
+                <button id="next-btn" class="next-btn btn hide">Siguiente</button>
+            </div>
+            
+            <div id="score-container" class="hide">
+                <div id="score">Puntuación: </div>
+                <button id="restart-btn" class="start-btn btn">Jugar de nuevo</button>
+            </div>
+        </div>
+        <div id="message-container" class="message-container hide">
+            <h2>Comodines</h2>
+            <div id="lifelines" class="hide">
+                <button id="fifty-fifty" class="lifeline-btn btn">50/50</button>
+                <button id="call-friend" class="lifeline-btn btn">Llamar a un amigo</button>
+                <button id="ask-audience" class="lifeline-btn btn">Público</button>
+                <button id="ask-teacher" class="lifeline-btn btn">Pregúntale al profe</button>
+            </div>
+            <div id="message"></div>
+            <canvas id="audienceChart" width="400" height="400"></canvas>
+        </div>
+        
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* Estilos generales para resetear márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del header */
+header {
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    display: flex;
+    justify-content: space-between; /* Espaciado entre logo y menú */
+    align-items: center; /* Alineación vertical */
+}
+
+/* Estilo del logo */
+.logo img {
+    height: 60px; /* Altura del logo */
+}
+
+/* Estilo de la navegación */
+nav ul {
+    list-style: none; /* Sin puntos de lista */
+    display: flex; /* Elementos en línea */
+    gap: 15px; /* Espaciado entre elementos */
+}
+
+/* Estilo de los enlaces de navegación */
+nav ul li a {
+    color: white; /* Color de texto */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+    padding: 5px 10px; /* Espaciado interno */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+/* Estilo para hover en los enlaces */
+nav ul li a:hover {
+    background-color: #555; /* Fondo gris en hover */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos responsivos para móviles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Columnas en lugar de filas */
+        align-items: flex-start; /* Alineación al inicio */
+    }
+    .logo img {
+        margin-bottom: 10px; /* Espacio debajo del logo */
+    }
+    nav ul {
+        flex-direction: column; /* Menú en columna */
+        gap: 10px; /* Espaciado entre elementos */
+    }
+}
