@@ -4,40 +4,44 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Trivia de Reciclaje y Medio Ambiente</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="header.css">
-        <link rel="stylesheet" href="reglas.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/reglas.css">
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
 </head>
 <body>
     <header>
         <div class="logo">
-          <a href="index.html"><img src="img/logo.jpg" alt="Logo del Juego"></a>
+          <a href="../index.html"><img src="img/logo.png" alt="Logo del Juego"></a>
         </div>
         <nav>
           <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="reglas.html">Instrucciones</a></li>
-            <li><a href="puntuaciones.html">Puntuaciones</a></li>
-            <li><a href="ayuda.html">Ayuda</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="views/reglas.html">Instrucciones</a></li>
+            <li><a href="views/documentos.html">Documentos</a></li>
+            <li><a href="views/ayuda.html">Ayuda</a></li>
           </ul>
         </nav>
       </header>
     <div class="container">
         
         <div id="start-screen" class="screen active">
-            <img src="eco-logo.jpg" alt="Economía Circular" class="logo">
-            <h2>Bienvenido a EcoTrivia</h2>
-            <p>¡Demuestra tus conocimientos sobre la economía circular con este divertido juego de trivia!</p>
-            <label for="difficulty">Selecciona la dificultad:</label>
-            <select id="difficulty">
-                <option value="easy">Fácil</option>
-                <option value="medium">Medio</option>
-                <option value="hard">Difícil</option>
-            </select>
-            <a href="juego.html" id="start-button" class="btn">Iniciar Juego</a>
-            
+            <img src="img/eco-logo.jpg" alt="Economía Circular" class="logo">
+            <div id="contenido-star">
+              <h2>Bienvenido a EcoTrivia</h2>
+              <p class="m-20">¡Demuestra tus conocimientos sobre la economía circular con este divertido juego de trivia!</p>
+              
+              <!-- <label for="difficulty">Selecciona la dificultad:</label>
+              <select id="difficulty">
+                  <option value="easy">Fácil</option>
+                  <option value="medium">Medio</option>
+                  <option value="hard">Difícil</option>
+              </select> -->
+              <a href="views/juego.html" id="start-button" class="btn">Iniciar Juego</a>
+              
+              
+            </div>
         </div>
     
     </div>

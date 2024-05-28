@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivia de Reciclaje y Medio Ambiente</title>
-    <link rel="stylesheet" href="styles2.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="../css/styles2.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/reglas.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
         <div class="logo">
-          <a href="index.html"><img src="img/logo.jpg" alt="Logo del Juego"></a>
+          <a href="../index.html"><img src="../img/logo.png" alt="Logo del Juego"></a>
         </div>
         <nav>
           <ul>
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="../index.html">Inicio</a></li>
             <li><a href="reglas.html">Instrucciones</a></li>
-            <li><a href="puntuaciones.html">Puntuaciones</a></li>
+            <li><a href="documentos.html">Documentos</a></li>
             <li><a href="ayuda.html">Ayuda</a></li>
           </ul>
         </nav>
       </header>
     <div class="container">
         <div class="game-container">
-            <h1>¿Quién quiere ser millonario? - Reciclaje y Medio Ambiente</h1>
+            <h2>¿Quién quiere ser millonario? - Reciclaje y Medio Ambiente</h2>
+            <h3 id="numerop">pregunta N° <samp id="npregunta">1</samp></h3>
+            <!-- <label for="nombre">Jugador: </label><input class="styled-input" id="nombre" type="text"> -->
             <div id="question-container" class="hide">
                 <div id="question">Pregunta</div>
                 <div id="answer-buttons" class="btn-grid">
@@ -58,6 +61,6 @@
         
         
     </div>
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
