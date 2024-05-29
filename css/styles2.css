@@ -47,7 +47,6 @@ body {
 
 .message-container {
     width: 40%;
-    max-width: 450px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -106,15 +105,7 @@ body {
 .lifeline-btn:disabled {
     background-color: #cccccc;
 }
-.message-container {
-    width: 30%;
-    max-width: 300px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-left: 20px;
-}
+
 
 #audienceChart {
     margin-top: 20px;
